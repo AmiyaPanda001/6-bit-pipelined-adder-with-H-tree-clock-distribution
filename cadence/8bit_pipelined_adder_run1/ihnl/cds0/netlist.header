@@ -1,0 +1,18 @@
+// Library - Design, Cell - fulladder, View - schematic
+// LAST TIME SAVED: Sep  6 18:05:44 2019
+// NETLIST TIME: Sep  7 22:44:28 2019
+`timescale 1ns / 1ns 
+
+module fulladder ( CARRY, SUM, A, B, C );
+
+output  CARRY, SUM;
+
+input  A, B, C;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "fulladder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

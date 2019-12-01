@@ -1,0 +1,16 @@
+( ( defbus
+( "IN" 0 3  "IN" 0 3  )
+( "OUT" 0 3  "OUT" 0 3  )
+ )
+( net
+( "IN<1>" "IN[1]" )
+( "OUT<1>" "OUT[1]" )
+( "IN<3>" "IN[3]" )
+( "OUT<3>" "OUT[3]" )
+( "IN<2>" "IN[2]" )
+( "OUT<0>" "OUT[0]" )
+( "IN<0>" "IN[0]" )
+( "OUT<2>" "OUT[2]" )
+ )
+( "4bit_register" "Design_4bit_register_schematic" )
+ )

@@ -1,0 +1,7 @@
+inv I10 ( net20, CLK);
+DFF I9 ( OUT[0], IN[0], CLK, net20);
+DFF I8 ( OUT[1], IN[1], CLK, net20);
+DFF I7 ( OUT[2], IN[2], CLK, net20);
+DFF I6 ( OUT[3], IN[3], CLK, net20);
+
+endmodule

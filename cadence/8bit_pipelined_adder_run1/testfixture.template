@@ -1,0 +1,31 @@
+
+`timescale 1ns / 1ns
+
+module test;
+
+
+wire  CARRY;
+
+reg  CARRY_IN, CLK;
+
+wire [0:7]  SUM;
+
+reg [0:7]  A;
+reg [0:7]  B;
+
+
+
+Design_8bit_pipelined_adder_schematic top(CARRY, SUM[0], SUM[1], SUM[2]
+     , SUM[3], SUM[4], SUM[5], SUM[6], SUM[7], A[0], A[1], A[2], A[3], 
+     A[4], A[5], A[6], A[7], B[0], B[1], B[2], B[3], B[4], B[5], B[6], 
+     B[7], CARRY_IN, CLK); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/testfixture.verilog file
+`include "/home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

@@ -1,0 +1,72 @@
+TOOL:	ncxlmode	15.20-s077: Started on Sep 08, 2019 at 18:37:21 CDT
+ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/testfixture.template
+	-f /home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/verilog.inpfiles
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/Dlatch/behavioral/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/inv/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/xor2/functional/verilog.v
+		/opt/coe/ncsu/ncsu-cdk-1.6.0.beta/lib/NCSU_Digital_Parts/nand2/functional/verilog.v
+		ihnl/cds0/netlist
+		ihnl/cds1/netlist
+		ihnl/cds2/netlist
+		ihnl/cds3/netlist
+		ihnl/cds4/netlist
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/.simTmpNCCmd "
+	+mpssession+virtuoso15416
+	+mpshost+n02-hera.olympus.ece.tamu.edu
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncxlmode: *W,DLCVAR (/home/grads/a/amiya_1/cds.lib,1): cds.lib Invalid environment variable ''.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /opt/coe/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> run
+                   0A=xxxxxxxx,B=xxxxxxxx,CARRY_IN=x,SUM=xxxxxxxx,CARRY=x
+                   8A=00000000,B=00000000,CARRY_IN=0,SUM=xxxxxxxx,CARRY=x
+                  10A=00000000,B=00000000,CARRY_IN=0,SUM=00000000,CARRY=0
+                  18A=01111110,B=11100111,CARRY_IN=0,SUM=00000000,CARRY=0
+                  20A=01111110,B=11100111,CARRY_IN=0,SUM=01100101,CARRY=1
+                  28A=11111111,B=00000000,CARRY_IN=1,SUM=01100101,CARRY=1
+                  30A=11111111,B=00000000,CARRY_IN=1,SUM=00000000,CARRY=1
+                  38A=10101010,B=01010101,CARRY_IN=0,SUM=00000000,CARRY=1
+                  40A=10101010,B=01010101,CARRY_IN=0,SUM=11111111,CARRY=0
+                  48A=10101010,B=01010101,CARRY_IN=1,SUM=11111111,CARRY=0
+                  50A=10101010,B=01010101,CARRY_IN=1,SUM=00000000,CARRY=1
+                  58A=11001100,B=00110011,CARRY_IN=0,SUM=00000000,CARRY=1
+                  60A=11001100,B=00110011,CARRY_IN=0,SUM=11111111,CARRY=0
+                  68A=11001100,B=00110011,CARRY_IN=1,SUM=11111111,CARRY=0
+                  70A=11001100,B=00110011,CARRY_IN=1,SUM=00000000,CARRY=1
+Simulation complete via $finish(1) at time 88 NS + 0
+./testfixture.verilog:145 #20 $finish;
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	15.20-s077: Exiting on Sep 08, 2019 at 18:56:43 CDT  (total: 00:19:22)

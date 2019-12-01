@@ -1,0 +1,110 @@
+@(#)$CDS: LVS version 6.1.8-64b 10/01/2018 19:50 (ip-172-18-22-57) $
+
+Command line: /opt/coe/cadence/IC618/tools.lnx86/dfII/bin/64bit/LVS -dir /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS -l -s -t /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/layout /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/schematic
+Like matching is enabled.
+Net swapping is enabled.
+Using terminal names as correspondence points.
+Compiling Diva LVS rules...
+
+    Net-list summary for /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/layout/netlist
+       count
+        230             nets
+        23              terminals
+        222             pmos
+        222             nmos
+
+    Net-list summary for /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/schematic/netlist
+       count
+        230             nets
+        23              terminals
+        222             pmos
+        222             nmos
+
+
+    Terminal correspondence points
+    N217      N32       A<0>
+    N213      N5        A<1>
+    N210      N23       A<2>
+    N207      N2        A<3>
+    N226      N43       A<4>
+    N223      N0        A<5>
+    N229      N38       B<0>
+    N224      N40       B<1>
+    N222      N6        B<2>
+    N220      N22       B<3>
+    N218      N7        B<4>
+    N215      N3        B<5>
+    N228      N34       CARRY
+    N221      N8        CIN
+    N214      N46       CLK
+    N211      N15       GND
+    N219      N4        SUM<0>
+    N216      N14       SUM<1>
+    N212      N13       SUM<2>
+    N209      N20       SUM<3>
+    N208      N11       SUM<4>
+    N227      N47       SUM<5>
+    N225      N39       VDD
+
+Devices in the netlist but not in the rules:
+        pcapacitor
+Devices in the rules but not in the netlist:
+        cap nfet pfet nmos4 pmos4
+
+The net-lists match.
+
+                             layout  schematic
+                                instances
+        un-matched              0       0      
+        rewired                 0       0      
+        size errors             0       0      
+        pruned                  0       0      
+        active                  444     444    
+        total                   444     444    
+
+                                  nets
+        un-matched              0       0      
+        merged                  0       0      
+        pruned                  0       0      
+        active                  230     230    
+        total                   230     230    
+
+                                terminals
+        un-matched              0       0      
+        matched but
+        different type          0       0      
+        total                   23      23     
+
+
+Probe files from /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/schematic
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:
+
+
+Probe files from /home/grads/a/amiya_1/ECEN714/lab_01/cadence/LVS/layout
+
+devbad.out:
+
+netbad.out:
+
+mergenet.out:
+
+termbad.out:
+
+prunenet.out:
+
+prunedev.out:
+
+audit.out:

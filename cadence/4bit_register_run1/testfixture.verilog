@@ -1,0 +1,42 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+initial
+begin 
+
+   CLK = 1'b0;
+   IN[0] = 1'b0;
+   IN[1] = 1'b0;
+   IN[2] = 1'b0;
+   IN[3] = 1'b0;
+
+   #10;
+   IN[0] = 1'b1;
+   IN[1] = 1'b1;
+   IN[2] = 1'b1;
+   IN[3] = 1'b1;
+
+   #10;
+   IN[0] = 1'b1;
+   IN[1] = 1'b0;
+   IN[2] = 1'b1;
+   IN[3] = 1'b0;
+
+
+#5;
+   IN[0] = 1'b1;
+   IN[1] = 1'b1;
+   IN[2] = 1'b1;
+   IN[3] = 1'b1;
+#10 $finish;
+
+end 
+
+always #5 CLK = ~CLK;
+
+initial
+$monitor ($time, "IN=%b%b%b%b,OUT=%b%b%b%b,CLK=%b", IN[3],IN[2],IN[1],IN[0],OUT[3],OUT[2],OUT[1],OUT[0], CLK);

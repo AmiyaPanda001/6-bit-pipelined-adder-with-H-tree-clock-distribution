@@ -1,0 +1,41 @@
+// Library - Design, Cell - 8bit_pipelined_adder, View - schematic
+// LAST TIME SAVED: Sep  7 22:44:06 2019
+// NETLIST TIME: Sep  7 22:44:28 2019
+`timescale 1ns / 1ns 
+
+module Design_8bit_pipelined_adder_schematic ( CARRY, SUM[0], SUM[1],
+     SUM[2], SUM[3], SUM[4], SUM[5], SUM[6], SUM[7], A[0], A[1], A[2],
+     A[3], A[4], A[5], A[6], A[7], B[0], B[1], B[2], B[3], B[4], B[5],
+     B[6], B[7], CARRY_IN, CLK );
+
+output  CARRY;
+
+input  CARRY_IN, CLK;
+
+output [0:7]  SUM;
+
+input [0:7]  A;
+input [0:7]  B;
+
+
+specify 
+    specparam CDS_LIBNAME  = "Design";
+    specparam CDS_CELLNAME = "8bit_pipelined_adder";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+Design_4bit_adder_schematic I14 ( net63, net67, net66, net65, net64,
+     A[0], A[1], A[2], A[3], B[0], B[1], B[2], B[3], CARRY_IN);
+Design_4bit_adder_schematic I13 ( CARRY, SUM[4], SUM[5], SUM[6],
+     SUM[7], net70, net71, net69, net68, net57, net58, net59, net60,
+     net61);
+Design_4bit_register_schematic I12 ( SUM[0], SUM[1], SUM[2], SUM[3],
+     CLK, net67, net66, net65, net64);
+Design_4bit_register_schematic I11 ( net57, net58, net59, net60, CLK,
+     B[4], B[5], B[6], B[7]);
+Design_4bit_register_schematic I10 ( net70, net71, net69, net68, CLK,
+     A[4], A[5], A[6], A[7]);
+DFF I15 ( net61, net63, CLK, net62);
+inv I16 ( net62, CLK);
+
+endmodule

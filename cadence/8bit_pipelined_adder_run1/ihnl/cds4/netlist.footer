@@ -1,0 +1,15 @@
+Design_4bit_adder_schematic I14 ( net63, net67, net66, net65, net64,
+     A[0], A[1], A[2], A[3], B[0], B[1], B[2], B[3], CARRY_IN);
+Design_4bit_adder_schematic I13 ( CARRY, SUM[4], SUM[5], SUM[6],
+     SUM[7], net70, net71, net69, net68, net57, net58, net59, net60,
+     net61);
+Design_4bit_register_schematic I12 ( SUM[0], SUM[1], SUM[2], SUM[3],
+     CLK, net67, net66, net65, net64);
+Design_4bit_register_schematic I11 ( net57, net58, net59, net60, CLK,
+     B[4], B[5], B[6], B[7]);
+Design_4bit_register_schematic I10 ( net70, net71, net69, net68, CLK,
+     A[4], A[5], A[6], A[7]);
+DFF I15 ( net61, net63, CLK, net62);
+inv I16 ( net62, CLK);
+
+endmodule

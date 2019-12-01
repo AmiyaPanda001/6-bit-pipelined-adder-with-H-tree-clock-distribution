@@ -1,0 +1,41 @@
+//
+// File created by:  ncxlmode
+// Do not modify this file
+//
++delay_mode_path
++typdelays
++nostdout
++nocopyright
+"+ncvlogargs+ -neverwarn -nostdout -nocopyright "
+"+ncelabargs+ -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ns -nostdout -nocopyright"
+"+ncsimargs+ -neverwarn  -nocopyright -gui -input /home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/.simTmpNCCmd "
++mpssession+virtuoso15416
++mpshost+n02-hera.olympus.ece.tamu.edu
+-NOSTDOUT
+-NOCOPYRIGHT
+-neverwarn
+-nocopyright
+-gui
+-input
+/home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1/.simTmpNCCmd
+-MPSSESSION
+virtuoso15416
+-MPSHOST
+n02-hera.olympus.ece.tamu.edu
+-MESSAGES
++EMGRLOG
+simout.tmp
+-XLSTIME
+1567985841
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-XLNAME
+ncxlmode
+-XLVERSION
+"TOOL:	ncxlmode	15.20-s077"

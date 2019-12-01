@@ -1,0 +1,21 @@
+\o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 06/27/2019 20:50 (sjfhw027) $
+\o Sub version:		sub-version  s043 
+\o Arguments:		-mpssession virtuoso177098 -mpshost n02-hera.olympus.ece.tamu.edu 
+\o Working Directory:	n02-hera.olympus.ece.tamu.edu:/home/grads/a/amiya_1/ECEN714/lab_01/cadence/Design
+\o 64-bit offsets
+\o changeWorkingDir("/home/grads/a/amiya_1/ECEN714/lab_01/cadence/Design") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrResizeWindow(cdsLibManager list(8 31 602 845))
+\a nrSetCurrentWindow(cdsLibManager)
+\o Qt version: 		5.9.1
+\o Log file is "/home/grads/a/amiya_1/ECEN714/lab_01/cadence/Design/libManager.log".
+\o Opening libManager window.
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\o MPS service: shutdown
+\o libManager is exiting.
+\a exit(0)

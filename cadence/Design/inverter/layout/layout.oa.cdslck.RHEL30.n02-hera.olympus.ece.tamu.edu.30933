@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      amiya_1
+HostName                       n02-hera.olympus.ece.tamu.edu
+ProcessIdentifier              30933
+ProcessCreationTime_UTC        1572284921
+ProcessCreationTime_Readable   Mon Oct 28 12:48:41 2019 CDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/grads/a/amiya_1/ECEN714/lab_01/cadence/Design/inverter/layout/layout.oa.cdslck
+TimeEditLocked                 Mon Oct 28 13:11:41 2019 CDT

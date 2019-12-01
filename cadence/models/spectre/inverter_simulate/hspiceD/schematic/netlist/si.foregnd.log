@@ -1,0 +1,19 @@
+Loading the file
+'/opt/coe/cadence/IC618/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Sep 23 15:30:38 2019
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'hspiceD spice cmos_sch cmos.sch schematic', for the
+instance 'P0' in cell
+'inverter'. Add one of these views to the cell 'pmos4' in the
+library
+'NCSU_Analog_Parts', or modify the view list so that it contains an existing
+view.
+
+ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view
+list, 'hspiceD spice cmos_sch cmos.sch schematic', for the
+instance 'V0' in cell
+'inverter_simulate'. Add one of these views to the cell 'vdc' in the
+library
+'NCSU_Analog_Parts', or modify the view list so that it contains an existing
+view.
+
+End netlisting Sep 23 15:30:38 2019

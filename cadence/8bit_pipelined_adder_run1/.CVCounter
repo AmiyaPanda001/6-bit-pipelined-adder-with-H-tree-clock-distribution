@@ -1,0 +1,16 @@
+cellViewCounterTable = makeTable('cellViewCounterTableType nil)
+cellViewCounterTable['("Design" "4bit_register" "schematic" )] =  3572
+cellViewCounterTable['("Design" "4bit_adder" "schematic" )] =  2630
+cellViewCounterTable['("NCSU_Digital_Parts" "nand2" "symbol" )] =  43
+cellViewCounterTable['("Design" "fulladder" "schematic" )] =  5853
+cellViewCounterTable['("NCSU_Digital_Parts" "inv" "symbol" )] =  34
+cellViewCounterTable['("basic" "ipin" "symbol" )] =  19
+cellViewCounterTable['("Design" "4bit_register" "symbol" )] =  141
+cellViewCounterTable['("Design" "4bit_adder" "symbol" )] =  211
+cellViewCounterTable['("NCSU_Digital_Parts" "Dlatch" "symbol" )] =  63
+cellViewCounterTable['("NCSU_Digital_Parts" "xor2" "symbol" )] =  44
+cellViewCounterTable['("NCSU_Digital_Parts" "DFF" "schematic" )] =  96
+cellViewCounterTable['("basic" "opin" "symbol" )] =  19
+cellViewCounterTable['("NCSU_Digital_Parts" "DFF" "symbol" )] =  62
+cellViewCounterTable['("Design" "8bit_pipelined_adder" "schematic" )] =  2887
+cellViewCounterTable['("Design" "fulladder" "symbol" )] =  87

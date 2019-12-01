@@ -1,0 +1,29 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "8bit_pipelined_adder"
+  repList "behavioral functional system verilog pld_verilog lai_verilog lmsi_verilog schematic symbol"
+  stopList "verilog pld_verilog lai_verilog lmsi_verilog symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  netlistDir "/home/grads/a/amiya_1/ECEN714/lab_01/cadence/8bit_pipelined_adder_run1"
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( model
+( "Design/8bit_pipelined_adder/schematic" "Design_8bit_pipelined_adder_schematic" )
+( "NCSU_Digital_Parts/DFF/schematic" "DFF" )
+( "Design/4bit_adder/schematic" "Design_4bit_adder_schematic" )
+( "Design/fulladder/schematic" "fulladder" )
+( "Design/4bit_register/schematic" "Design_4bit_register_schematic" )
+ )
+( "Design_4bit_adder_schematic" "ihnl/cds1/map" )
+( "Design_8bit_pipelined_adder_schematic" "ihnl/cds4/map" )
+( "DFF" "ihnl/cds2/map" )
+( "fulladder" "ihnl/cds0/map" )
+( "Design_4bit_register_schematic" "ihnl/cds3/map" )
+ )

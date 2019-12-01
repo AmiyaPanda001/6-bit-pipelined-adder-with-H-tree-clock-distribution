@@ -1,0 +1,11 @@
+### Custom WaveView session file (version O-2018.09 build Aug 27, ) ###
+### saved at 23:52:22 on Fri Sep 20 2019 ###
+wdf 0 "/home/grads/a/amiya_1/ECEN714/lab_01/cadence/cellcharacs/nand.raw/TransientAnalysis.tran.tran" load=used 
+scalar list
+waveview_begin 1  stack  offset=0 name_b=81 mntr_b=81 name_width=66 dm=delay:409:129:1:0:0:5e+01:5e+01:0e+00:0e+00:0:0:1.1e-09:9e-01:1.75555090547086e-09:8.99590846546246e-01:1:4 dm=delay:577:123:1:0:0:5e+01:5e+01:0e+00:0e+00:0:0:4.1e-09:9e-01:4.8006529801822e-09:8.99590846546246e-01:2:4 "name=waveview 1" 
+  panel_begin linear pidx=0 spath=name+file xlabel="time(sec)" ylabel="V" ymin=-9.12654440473133e-01 ymax=2.71225620123764e+00 
+    line src=wdf lidx=0 fidx=0 "delim=.^" sigtype=1 "name=IV_in" attr=0:0:1:0 autoset=true disp=show 
+    line src=wdf lidx=1 fidx=0 "delim=.^" sigtype=1 "name=IV_out" attr=1:1:1:0 autoset=true disp=show 
+  panel_end
+waveview_end
+browserOpened
